@@ -1,16 +1,17 @@
 
 # react-native-package-name
 
+I was making something and thought it would be handy to be able to get a project's package name in Android to be able to link to the app's page for reviews/sharing. If this module is used in iOS it will get the Bundle Identifier string instead.
+
 ## Getting started
 
 `$ npm install react-native-package-name --save`
 
-### Mostly automatic installation
+### Automatic(link) installation
 
 `$ react-native link react-native-package-name`
 
 ### Manual installation
-
 
 #### iOS
 
@@ -34,20 +35,10 @@
       compile project(':react-native-package-name')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNPackageName.sln` in `node_modules/react-native-package-name/windows/RNPackageName.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Cl.Json.RNPackageName;` to the usings at the top of the file
-  - Add `new RNPackageNamePackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
-import RNPackageName from 'react-native-package-name';
-
-// TODO: What do with the module?
-RNPackageName;
+import { PackageName } from 'react-native-package-name';
+let packageName = PackageName.getPackageName();
+// Do something with packageName
 ```
   
