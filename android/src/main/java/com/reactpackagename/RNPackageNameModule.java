@@ -1,10 +1,8 @@
 
-package com.reactlibrary;
+package com.reactpackagename;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
 
 import java.util.HashMap;
 import java.util.Map;
