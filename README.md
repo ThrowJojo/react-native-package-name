@@ -1,7 +1,7 @@
 
 # react-native-package-name
 
-I was making something and thought it would be handy to be able to get a project's package name in Android to be able to link to the app's page for reviews/sharing. If this module is used in iOS it will get the Bundle Identifier string instead.
+A library to get a project's package name in Android so you can link to the app's Play Store listing page for reviews/sharing. If this module is used in iOS it will get the Bundle Identifier string instead.
 
 ## Getting started
 
